@@ -883,6 +883,9 @@ nav .width-limit .navbar-coll .navbar-nav .search form .navbar-search-tips .sear
   .container {
     width: 750px;
   }
+  nav .navbar-header {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
@@ -894,5 +897,64 @@ nav .width-limit .navbar-coll .navbar-nav .search form .navbar-search-tips .sear
 @media (min-width: 1081px) {
   .container {
     width: 960px;
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 768px) {
+  nav .menu-text {
+    display: none;
+  }
+  nav .search .search-input {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .navbar-header button {
+    float: left;
+    padding: 11px 10px;
+    margin-top: 9px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  nav .navbar-header button .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #888;
+  }
+  nav .navbar-header button .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  nav .navbar-coll {
+    position: relative;
+    width: 100vw;
+    border: none;
+  }
+  nav .navbar-coll .navbar-nav {
+    position: absolute;
+    top: 58px;
+    width: 100vw;
+  }
+  nav .navbar-coll .navbar-nav .index i,
+  nav .navbar-coll .navbar-nav .download i {
+    display: none !important;
+  }
+  nav .navbar-coll .navbar-nav li {
+    width: 80% !important;
+    margin-left: 10%;
+    clear: both;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  nav .navbar-coll .navbar-nav li .search-input {
+    width: 100% !important;
+    transition: none !important;
+  }
+  nav .navbar-coll .navbar-nav li .search-input:focus ~ .navbar-search-tips {
+    opacity: 0 !important;
   }
 }

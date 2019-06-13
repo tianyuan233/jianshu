@@ -297,6 +297,10 @@ nav {
   .container {
     width: 750px
   }
+
+  nav .navbar-header {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
@@ -309,4 +313,86 @@ nav {
   .container {
     width: 960px
   }
+}
+
+
+@media (max-width: 1080px) and (min-width: 768px) {
+  nav {
+    .menu-text {
+      display: none;
+    }
+
+    .search {
+      .search-input {
+        width: 100px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    .navbar-header {
+      button {
+        float: left;
+        padding: 11px 10px;
+        margin-top: 9px;
+        background-color: transparent;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
+        .icon-bar {
+          display: block;
+          width: 22px;
+          height: 2px;
+          border-radius: 1px;
+          background-color: #888;
+
+          &+.icon-bar {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+
+    .navbar-coll {
+      position: relative;
+      width: 100vw;
+      border: none;
+
+      .navbar-nav {
+        position: absolute;
+        top: 58px;
+        width: 100vw;
+
+        .index,
+        .download {
+          i {
+            display: none !important;
+          }
+        }
+
+        li {
+          width: 80% !important;
+          margin-left: 10%;
+          clear: both;
+          text-align: center;
+          font-size: 17px;
+          border-bottom: 1px solid #f0f0f0;
+
+          .search-input {
+            width: 100% !important;
+            transition: none !important;
+          }
+
+          .search-input:focus {
+            &~.navbar-search-tips {
+              opacity: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
