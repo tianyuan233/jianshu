@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>简书</title>
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="./css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
@@ -27,28 +27,47 @@
         </a>
       </div>
       <div class="container">
-              <div class="navbar-coll">
-                <ul class="navbar-nav clearfix">
-                  <li class="tab index">
-                    <a href="">
-                      <span class="menu-text">首页</span>
-                      <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="tab download">
-                    <a href="">
-                      <span class="menu-text">下载App</span>
-                      <i class="fa fa-mobile" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="search">
-                    <form action="" method="get">
-                      <input type="text" class="search-input" placeholder="搜索">
-                      <a class="search-btn" href=""><i class="fa fa-search"></i></a>
-                    </form>
-                  </li>
-                </ul>
-              </div>
+        <div class="navbar-coll">
+          <ul class="navbar-nav clearfix">
+            <li class="tab index">
+              <a href="">
+                <span class="menu-text">首页</span>
+                <i class="iconfont ic-navigation-discover menu-icon" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="tab download">
+              <a href="">
+                <span class="menu-text">下载App</span>
+                <i class="iconfont ic-navigation-download menu-icon" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="search">
+              <form action="" method="get">
+                <input type="text" class="search-input" placeholder="搜索">
+                <a class="search-btn" href=""><i class="iconfont ic-search"></i></a>
+                <!-- focus 弹出框 -->
+                <div class="navbar-search-tips" style="">
+                  <div class="search-trending">
+                    <div class="search-trending-header clearfix"><span>热门搜索</span> <a><i
+                          class="iconfont ic-search-change" style="transform: rotate(360deg);"></i> 换一批</a></div>
+                    <ul class="search-trending-tag-wrap">
+                      <li><a href="#" target="_blank">手帐</a></li>
+                      <li><a href="#" target="_blank">书法</a></li>
+                      <li><a href="#" target="_blank">PPT</a></li>
+                      <li><a href="#" target="_blank">穿搭</a></li>
+                      <li><a href="#" target="_blank">打碗碗花</a></li>
+                      <li><a href="#" target="_blank">简书</a></li>
+                      <li><a href="#" target="_blank">姥姥的澎湖湾</a></li>
+                      <li><a href="#" target="_blank">设计</a></li>
+                      <li><a href="#" target="_blank">创业</a></li>
+                      <li><a href="#" target="_blank">交友</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
       </div>
 
 
